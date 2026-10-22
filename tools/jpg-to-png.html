@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPG to PNG Converter Free & Fast - All Tools Box</title>
+    <meta name="description" content="Convert JPG images to transparent PNG format online for free. 100% private, client-side conversion without uploading files to any server.">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23ff2a85'/><path d='M30 30h40v40H30z' fill='none' stroke='%23ffffff' stroke-width='8'/><path d='M20 50h60M50 20v60' stroke='%23ffffff' stroke-width='8' stroke-linecap='round'/></svg>">
+    
+    <!-- Link to Main CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Google SEO FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is converting JPG to PNG on All Tools Box safe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, completely safe. All conversions happen locally inside your web browser using HTML5 Canvas technology. Your images are never uploaded to any remote server."
+        }
+      },{
+        "@type": "Question",
+        "name": "Will converting JPG to PNG reduce image quality?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, PNG is a lossless format. Converting JPG to PNG retains maximum available original visual quality."
+        }
+      }]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand-logo">
+                <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="42" height="42">
+                    <rect width="100" height="100" rx="22" fill="#ff2a85"/>
+                    <path d="M30 30h40v40H30z" fill="none" stroke="#ffffff" stroke-width="8"/>
+                    <path d="M20 50h60M50 20v60" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">All Tools <span class="highlight">Box</span></span>
+            </a>
+            <div class="language-selector">
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top Ad Space -->
+    <div class="ad-wrapper">
+        <div class="ad-box ad-top">
+            <span>-- Advertisement Space (Top Banner) --</span>
+        </div>
+    </div>
+
+    <!-- Main Tool Workspace Container -->
+    <main class="main-content">
+        
+        <div class="tool-workspace-card">
+            <h1 class="hero-title">JPG to PNG Converter</h1>
+            <p class="hero-subtitle">Instantly transform JPG images into high-quality PNG format.</p>
+
+            <!-- File Upload Dropzone -->
+            <div class="upload-dropzone" id="dropzone" onclick="document.getElementById('fileInput').click()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ff2a85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                <h3>Click or Drag & Drop JPG Image Here</h3>
+                <p>Supports .jpg, .jpeg files (Max 25MB)</p>
+                <input type="file" id="fileInput" accept="image/jpeg, image/jpg" style="display:none;" onchange="handleImageUpload(event)">
+            </div>
+
+            <!-- Preview & Download Section -->
+            <div id="previewArea" style="display:none; margin-top:25px; text-align:center;">
+                <img id="imagePreview" style="max-width:100%; max-height:300px; border-radius:12px; border:2px solid var(--border-color);" alt="Converted PNG Preview">
+                <br><br>
+                <button id="downloadBtn" class="action-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download PNG Image
+                </button>
+            </div>
+        </div>
+
+        <!-- In-Content Ad Space -->
+        <div class="ad-wrapper" style="margin: 30px 0;">
+            <div class="ad-box ad-infeed">
+                <span>-- Advertisement Space (Below Tool) --</span>
+            </div>
+        </div>
+
+        <!-- SEO Content & FAQ Section -->
+        <section class="seo-faq-section">
+            <h2>How to Convert JPG to PNG Online?</h2>
+            <ol class="guide-steps">
+                <li>Click the upload box above and select your JPG or JPEG image.</li>
+                <li>Our browser-based client engine instantly converts the image into PNG format.</li>
+                <li>Click the glowing <strong>"Download PNG Image"</strong> button to save it directly to your device.</li>
+            </ol>
+
+            <h2 style="margin-top:30px;">Frequently Asked Questions (FAQ)</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <h3>Q: Is my uploaded image stored on your server?</h3>
+                    <p>A: Absolutely not. All Tools Box processes files entirely inside your device browser using HTML5 web technology. Your photos never leave your device.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: Is this JPG to PNG converter free?</h3>
+                    <p>A: Yes, it is 100% free with no limits, no registration, and no hidden fees.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: Can I use this tool on my Android phone?</h3>
+                    <p>A: Yes! It works seamlessly across mobile devices, tablets, Chrome, Kiwi Browser, and desktop computers.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Ad Banner Space -->
+    <div class="ad-wrapper">
+        <div class="ad-box ad-bottom">
+            <span>-- Advertisement Space (Bottom Banner) --</span>
+        </div>
+    </div>
+
+    <!-- Legal Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="footer-copy">&copy; 2026 <strong>All Tools Box</strong>. All rights reserved.</p>
+            <nav class="footer-links">
+                <a href="../about.html">About Us</a>
+                <a href="../privacy-policy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Service</a>
+                <a href="../contact.html">Contact Us</a>
+                <a href="../disclaimer.html">Disclaimer</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- CSS Extension for Workspace & Action Button -->
+    <style>
+        .tool-workspace-card {
+            background: #ffffff;
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+        }
+        .upload-dropzone {
+            border: 2.5px dashed var(--primary-pink);
+            background: var(--light-pink);
+            padding: 40px 20px;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        .upload-dropzone:hover {
+            background: #ffdce9;
+            transform: scale(1.01);
+        }
+        .action-btn {
+            background: var(--primary-pink);
+            color: #ffffff;
+            border: none;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 20px var(--pink-glow);
+            transition: all 0.3s ease;
+        }
+        .action-btn:hover {
+            background: var(--dark-pink);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px var(--pink-glow);
+        }
+        .seo-faq-section {
+            background: #ffffff;
+            border: 1.5px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .guide-steps { margin-left: 20px; margin-top: 10px; }
+        .guide-steps li { margin-bottom: 8px; }
+        .faq-item { margin-top: 18px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px; }
+        .faq-item h3 { font-size: 1.05rem; color: #111; margin-bottom: 4px; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+    </style>
+
+    <!-- Convert Logic JavaScript -->
+    <script>
+        function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0);
+
+                    const pngUrl = canvas.toDataURL('image/png');
+                    document.getElementById('imagePreview').src = pngUrl;
+                    document.getElementById('previewArea').style.display = 'block';
+
+                    const downloadBtn = document.getElementById('downloadBtn');
+                    downloadBtn.onclick = function() {
+                        const link = document.createElement('a');
+                        link.download = file.name.replace(/\.[^/.]+$/, "") + "-converted.png";
+                        link.href = pngUrl;
+                        link.click();
+                    };
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+</body>
+  </html>
